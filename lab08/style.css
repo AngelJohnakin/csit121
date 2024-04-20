@@ -1,0 +1,38 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+article {
+    background: white;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="file"], button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+

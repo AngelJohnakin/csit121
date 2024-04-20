@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Form Lab - Learning Form Elements</h1>
+    <main>
+        <article>
+            <h2>Action</h2>
+            <p>This attribute specifies the server URL that will receive the form data from submission. It determines where to send the form data when the submit button is pressed.</p>
+            <form action="/submit-path" method="post">
+                <fieldset>
+                    <legend>Form Submission</legend>
+                    <button type="submit">Submit Example</button>
+                </fieldset>
+            </form>
+        </article>
+
+        <article>
+            <h2>Autocomplete</h2>
+            <p>Autocomplete helps fill out forms based on previous entries. Turning it off prevents the browser from completing fields automatically and even enhances privacy.</p>
+            <label for="autocomplete-name">Your Name:</label>
+            <input type="text" id="autocomplete-name" name="autocomplete-name" autocomplete="off">
+        </article>
+
+        <article>
+            <h2>Method</h2>
+            <p>The method attribute controls how data is sent to the server. Using "post" hides the data from the URL, which even enhances security compared to using "get".</p>
+            <form method="post">
+                <fieldset>
+                    <legend>Submission Method</legend>
+                    <button type="submit">Test Method</button>
+                </fieldset>
+            </form>
+        </article>
+
+        <article>
+            <h2>Enctype</h2>
+            <p>This attribute specifies how the browser encodes the form data when sending it to the server. "multipart+form-data" is necessary for uploading files as it handles file data correctly.</p>
+            <form enctype="multipart/form-data">
+                <fieldset>
+                    <legend>File Upload</legend>
+                    <label for="file-upload">Choose a file to upload:</label>
+                    <input type="file" id="file-upload" name="file">
+                    <button type="submit">Upload File</button>
+                </fieldset>
+            </form>
+        </article>
+
+        <article>
+            <h2>ID</h2>
+            <p>The ID attribute provides a unique identifier for form elements, which is useful for CSS styling. It ensures each form element can be uniquely accessed without worry of not fidning it.</p>
+            <label for="unique-element">Unique ID:</label>
+            <input type="text" id="unique-element" name="unique-element">
+        </article>
+    </main>
+</body>
+</html>
